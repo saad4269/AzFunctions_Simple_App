@@ -9,12 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 steps:
-  - 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
-    
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
